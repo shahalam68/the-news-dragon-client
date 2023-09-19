@@ -4,7 +4,7 @@ import { Button, Container,Form } from 'react-bootstrap';
 
 const Login = () => {
     return (
-        <Container>
+        <Container className='mx-auto w-25'>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
