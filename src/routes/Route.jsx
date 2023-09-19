@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
 import Home from "../pages/Home/Home/Home";
 import Category from "../pages/Home/Category/Category";
@@ -13,6 +13,10 @@ const route = createBrowserRouter([
         path:'/',
         element:<LoginLayout></LoginLayout>,
         children:[
+            {
+                path:'/',
+                element:<Navigate to= '/category'></Navigate>
+            },
             {
                 path:'/login',
                 element:<Login></Login>
