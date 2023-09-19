@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -20,9 +21,14 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
+
                 <Button variant="primary" type="submit">
-                    Submit
+                    Login
                 </Button>
+                <br />
+                <Form.Text className='text-secoundery'>
+                    Do not have an account <Link to='/register'>Register</Link>
+                </Form.Text>
                 <Form.Text className="text-danger">
                 </Form.Text>
                 <Form.Text className="text-danger">
