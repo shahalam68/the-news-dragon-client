@@ -19,7 +19,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
-            })
+            });
     }
     return (
         <Container className='mx-auto w-25'>
