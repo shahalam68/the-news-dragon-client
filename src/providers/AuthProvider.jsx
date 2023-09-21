@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } f
 import app from '../firebase/firebase.config';
 
 
-export const AuthContext = createContext(null);
+export const AuthContext = createContext(null)
 const auth = getAuth(app);
 
 
