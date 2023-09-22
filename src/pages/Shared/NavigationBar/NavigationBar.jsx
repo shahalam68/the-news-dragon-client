@@ -33,7 +33,6 @@ const NavigationBar = () => {
                                     <Button variant="secondary">Login</Button>
                                 </Link>
                             }
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
